@@ -1,0 +1,39 @@
+.wrapper{
+    min-height: 100vh;
+    max-height: auto;
+    background-color: rgb(36, 36, 36);
+}
+.textContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+.leftText{
+    display: flex;
+    background-color: #00D4FF;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #00D4FF;
+    gap: 18px;
+    padding: 5px 25px;
+}
+.leftText:hover{
+    box-shadow: 0 0 20px #00D4FF;
+}
+.head{
+    color: rgb(36, 36, 36);
+    font-size: 41px;
+    font-family: cursive;
+    font-weight: 700;
+}
+.rightText{
+    border: 3px solid #00D4FF;
+    padding: 5px 25px;
+}
+.subHead{
+    color:#00D4FF;
+    font-size: 40px;
+    font-family: cursive;
+}
