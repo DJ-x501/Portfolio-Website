@@ -17,6 +17,8 @@ import express from '../assets/express.png';
 import api from '../assets/api.png';
 import github from '../assets/github.png';
 import code from '../assets/code.png';
+import portfolio from '../assets/portfolio.png';
+import eCommerce from '../assets/e-commerce.png';
 //components
 
 
@@ -103,13 +105,15 @@ const Home = () => {
     const projects = [
         {
             name: "E-Commerce Website",
-            description: "A full-stack MERN e-commerce app with product listing, cart, and admin dashboard.",
-            image: "/assets/projects/ecommerce.png"
+            description: "A full-stack MERN e-commerce app with product listing, cart.",
+            image: eCommerce,
+            link: "https://e-commerce-ten-livid-88.vercel.app/"
         },
         {
             name: "Portfolio Website",
-            description: "Personal portfolio built with React showcasing skills, projects, and contact form.",
-            image: "/assets/projects/portfolio.png"
+            description: "Personal portfolio built with React showcasing skills, projects, and contact details.",
+            image: portfolio,
+            link: "https://portfolio-website-1369l86uo.vercel.app/"
         },
     ];
     return (
@@ -173,7 +177,7 @@ const Home = () => {
 
 
 
-            <div className="projectsWrapper">
+            <div className="projectsWrapper" id='projects'>
                 <div className="projectHead">Projects</div>
                 {projects.map((project, index) => (
                     <div className="projectCard" key={index}>
@@ -183,11 +187,32 @@ const Home = () => {
                         <div className="projectInfo">
                             <h2>{project.name}</h2>
                             <p>{project.description}</p>
+                            <div className="links"><a href={project.link} target='_blank'>Go to Website</a></div>
                         </div>
                     </div>
                 ))}
                 <div className="soon">More Coming Soon .....</div>
             </div>
+
+
+
+            {/* contact section */}
+
+
+            <div className="footer">
+                <div className="footer-left">
+                    <h3>Contact Details</h3>
+                    <p>Address: Jaipur, Rajasthan, India</p>
+                    <p>Mobile: +91 9145807743</p>
+                    <p>E-mail: bhargavdhananjaix501@gmail.com</p>
+
+                </div>
+                <div className="footer-right">
+                    <h3>Mern Stack Developer</h3>
+                    <p>I am a motivated and detail-oriented Full-Stack Web Developer with strong foundational skills in front-end and back-end technologies. Passionate about building responsive web applications and continuously learning new tools and frameworks. Eager to contribute to real-world projects and grow as a developer in a collaborative team environment.</p>
+                </div>
+            </div>
+
         </div>
     )
 }

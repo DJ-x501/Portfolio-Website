@@ -191,7 +191,7 @@ p{
     font-family: 'Trebuchet MS';
 }
 .wrapper{
-  background-color: black;
+  background:linear-gradient(to top left,rgb(5, 1, 41),rgb(57, 57, 57))
 }
 
 
@@ -277,4 +277,48 @@ p{
   font-size: 40px;
   font-weight: 700;
   color: grey;
+}
+.links a{
+  font-family: 'Trebuchet MS';
+  font-size: 20px;
+  text-decoration: none;
+  color:blueviolet;
+}
+.links{
+  margin-top: 20px;
+}
+.links a:hover{
+  color: #00d4ff;
+}
+
+
+/* contact section css */
+
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 50px;
+  background-color: black;
+  color: white;
+  font-family: 'Trebuchet MS';
+  border-top: 2px solid #444;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 16px;
+}
+
+.footer-left,
+.footer-right {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer h3 {
+  color: blueviolet;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  margin: 6px 0;
 }
