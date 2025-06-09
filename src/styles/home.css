@@ -1,6 +1,5 @@
 .wrapper {
-  min-height: 100vh;
-  max-height: auto;
+  height: auto;
   background-color: rgb(36, 36, 36);
 }
 .heading {
@@ -13,18 +12,19 @@
   margin-top: 100px;
   justify-content: center;
   align-items: left;
-  max-width: 1000px;
+  max-width: 100vw;
   height: auto;
   flex-direction: column;
   gap: 40px;
   padding: 20px;
+  /* background-color: black; */
 }
 .leftText {
   display: flex;
-  background-color: #00d4ff;
+  background-color: silver;
   justify-content: center;
   align-items: center;
-  border: 3px solid #00d4ff;
+  border: 3px solid silver;
   gap: 18px;
   padding: 5px 25px;
   transition: 0.3s ease-in-out;
@@ -46,11 +46,11 @@
 }
 .subHead {
   color: blueviolet;
-  font-size: 40px;
+  font-size: 41px;
   font-family: "Trebuchet MS";
 }
 .summary {
-  color: #00d4ff;
+  color: silver;
   font-size: 25px;
   font-family: "Trebuchet MS";
 }
@@ -78,21 +78,17 @@
   align-items: center;
   gap: 15px;
 }
-.btn {
-  font-size: 20px;
-  border: none;
-  background-color: rgb(32, 31, 31);
-  padding: 3px 10px;
-  color: #00d4ff;
-  border-radius: 10px;
-  transition: 0.2s ease-in;
-  font-family: "Trebuchet MS";
+.navbar a{
+  text-decoration: none;
+  font-size: 25px;
+  font-style: none;
+  color: silver;
+  font-weight: 600;
+  font-family: 'Trebuchet MS';
 }
-
-.btn:hover {
-  box-shadow: 0 0 20px blueviolet;
-  background-color: #00d4ff;
-  color: rgb(32, 31, 31);
+a:hover{
+  transform: translateY(-5px);
+  color: blueviolet;
 }
 .title {
   display: flex;
@@ -102,11 +98,16 @@
   padding-left: 20px;
   font-family: "Trebuchet MS";
 }
+
+
+
+
+
+
 .extraButton {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1000px;
 }
 .Rbtn {
   padding: 7px 20px;
@@ -123,23 +124,157 @@
   background-color: #00d4ff;
   box-shadow: 0 0 20px #00d4ff;
 }
-.portfolio {
-  display: inline-block;
-  position: absolute;
-  right: 150px;
-  top: 290px;
-  color:white;
-  font-family:'Trebuchet MS';
-  font-size:50px;
-  font-weight: 700;
-  z-index: +1;
-}
 .imgM{
     position: absolute;
-    right: 220px;
-    top: 260px;
+    left: 50px;
+    top: 20px;
+    /* background-color: black; */
 }
 .imgM img{
-    width: 250px;
-    height: 250px;
+    width: 50px;
+    height: 50px;
+}
+
+
+
+/* css for skills section */
+
+
+
+.wrapperSkills{
+  margin: 30px;
+  background-color: rgb(68, 68, 68);
+  padding: 10px;
+  box-shadow: inset 0 0 20px rgb(226, 221, 221);
+  border-radius: 20px;
+}
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.skill-card {
+  width: 220px;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+p{
+    padding-top: 8px;
+}
+.skill-card:hover {
+  box-shadow: 0 0 20px #00ffe0, 0 0 30px #00ffe0;
+  transform: translateY(-5px);
+}
+
+.skill-image {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+.skillHead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    color: silver;
+    font-size: 40px;
+    font-weight: 800;
+    font-family: 'Trebuchet MS';
+}
+.wrapper{
+  background-color: black;
+}
+
+
+
+
+/* projects css */
+
+
+
+.projectsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px;
+  background-color: #121212;
+  margin: 20px 50px;
+  border-radius: 20px;
+  box-shadow: inset 0 0 20px rgb(79, 78, 78);
+}
+.projectHead{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Trebuchet MS';
+  font-size: 40px;
+  color:silver;
+  font-weight: 800;
+}
+.projectCard {
+  display: flex;
+  flex-direction: row;
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 212, 255, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.projectCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.4);
+}
+
+.projectImage {
+  width: 30%;
+  min-width: 200px;
+  height: 180px;
+  overflow: hidden;
+  background-color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projectImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.projectInfo {
+  padding: 20px;
+  color: silver;
+  width: 70%;
+}
+
+.projectInfo h2 {
+  color: blueviolet;
+  font-family: "Trebuchet MS";
+  margin-bottom: 10px;
+}
+
+.projectInfo p {
+  font-size: 16px;
+  font-family: "Trebuchet MS";
+  line-height: 1.5;
+}
+.soon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Trebuchet MS';
+  font-size: 40px;
+  font-weight: 700;
+  color: grey;
 }

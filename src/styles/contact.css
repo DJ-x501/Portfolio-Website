@@ -1,0 +1,28 @@
+.infromation{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    margin-top: 60px;
+}
+.infoBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    gap: 20px;
+    background-color:#5E6366;
+    height: 450px;
+    padding: 0px 30px;
+    border-radius: 20px;
+}
+.infoBox:hover{
+    box-shadow: 0 0 30px #5E6366;
+}
+.info{
+    font-family: 'Trebuchet MS';
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+
+}
