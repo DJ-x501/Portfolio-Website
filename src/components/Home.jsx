@@ -19,6 +19,7 @@ import github from '../assets/github.png';
 import code from '../assets/code.png';
 import portfolio from '../assets/portfolio.png';
 import eCommerce from '../assets/e-commerce.png';
+import authPage from '../assets/authPage.png';
 //components
 
 
@@ -113,8 +114,14 @@ const Home = () => {
             name: "Portfolio Website",
             description: "Personal portfolio built with React showcasing skills, projects, and contact details.",
             image: portfolio,
-            link: "https://portfolio-website-1369l86uo.vercel.app/"
+            link: "https://portfolio-website-iota-two-13.vercel.app/"
         },
+        {
+            name:"Auth-App",
+            description:"Note: this app is still in progress.......",
+            image:authPage,
+            link:"not ready yet"
+        }
     ];
     return (
         <div className='wrapper'>
@@ -199,7 +206,7 @@ const Home = () => {
             {/* contact section */}
 
 
-            <div className="footer">
+            <div className="footer" id='contact'>
                 <div className="footer-left">
                     <h3>Contact Details</h3>
                     <p>Address: Jaipur, Rajasthan, India</p>

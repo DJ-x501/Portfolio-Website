@@ -326,3 +326,189 @@ p{
 .footer p {
   margin: 6px 0;
 }
+
+
+
+
+
+/* Tablet view (≤1024px) */
+@media screen and (max-width: 1024px) {
+  .textContainer {
+    margin-top: 60px;
+    padding: 15px;
+  }
+
+  .head, .subHead {
+    font-size: 32px;
+  }
+
+  .summary {
+    font-size: 20px;
+  }
+
+  .projectCard {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .projectImage, .projectInfo {
+    width: 100%;
+  }
+
+  .footer {
+    padding: 20px 30px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-left, .footer-right {
+    width: 100%;
+    min-width: auto;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .title {
+    font-size: 45px;
+  }
+
+  .skillHead {
+    font-size: 30px;
+  }
+}
+
+/* Mobile view (≤768px) */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .navbar a {
+    font-size: 20px;
+  }
+
+  .imgM {
+    position: static;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .imgM img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .textContainer {
+    align-items: center;
+    gap: 30px;
+    padding: 15px;
+  }
+
+  .leftText, .rightText {
+    flex-direction: column;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .head, .subHead {
+    font-size: 28px;
+  }
+
+  .summary {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .icons {
+    display: none;
+  }
+
+  .projectsWrapper {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .projectInfo h2 {
+    font-size: 22px;
+  }
+
+  .projectInfo p {
+    font-size: 14px;
+  }
+
+  .footer {
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .skillHead {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .Rbtn {
+    font-size: 18px;
+    padding: 6px 16px;
+  }
+}
+
+/* Extra small (≤480px) */
+@media screen and (max-width: 480px) {
+  .navbar a {
+    font-size: 18px;
+  }
+
+  .head, .subHead {
+    font-size: 24px;
+  }
+
+  .summary {
+    font-size: 16px;
+  }
+
+  .projectCard {
+    flex-direction: column;
+  }
+
+  .projectImage, .projectInfo {
+    width: 100%;
+  }
+
+  .skill-card {
+    width: 90%;
+  }
+
+  .footer {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .projectHead, .soon {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .links a {
+    font-size: 16px;
+  }
+
+  .cards-container {
+    padding: 10px;
+    gap: 15px;
+  }
+}
